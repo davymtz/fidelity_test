@@ -12,8 +12,8 @@ $app = AppFactory::create();
  */
 $app->addRoutingMiddleware();
 
-// Si tu proyecto esta en un subdirectorio, descomentar esta línea y agregar el nombre de la carpeta de tu proyecto
-// $app->setBasePath('nombre_proyecto');
+// Si tu proyecto esta en un subdirectorio, descomentar esta línea
+// $app->setBasePath('/fidelity_test');
 
 /**
  * Add Error Middleware
