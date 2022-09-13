@@ -9,6 +9,7 @@ use Slim\Routing\RouteCollectorProxy;
 return function (App $app) {
     $app->get('/login', [AuthController::class, "view"])->setName("login");
     $app->post('/login', [AuthController::class, 'login']);
+    $app->get('/logout', [AuthController::class, 'logout']);
 
     $app->group("/", function (RouteCollectorProxy $group) {
         $group->get("", [CatalogsController::class, "index"])

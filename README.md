@@ -14,8 +14,11 @@ Si tu proyecto esta ubicado en un subdirectorio de tu servidor web, deberás ir 
 ```php
 // Descomentar estra linea
 // $app->setBasePath('/fidelity_test');
-// Entrar desde esta ruta si está en subdirectorio:
-// {mi_dominio}/fidelity_test/login
-// Caso contrario:
-// {mi_dominio}/login
 ```
+
+Entrar desde esta ruta si está en subdirectorio:
+{mi_dominio}/fidelity_test/login
+Caso contrario:
+{mi_dominio}/login
+
+Pasar cerrar las sesiones ir camibar /login por /logout

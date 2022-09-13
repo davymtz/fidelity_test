@@ -4,7 +4,6 @@ namespace App\Controllers;
 
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
-use Slim\Psr7\Response as HttpResponse;
 
 class AuthController extends Soap {
 
@@ -35,10 +34,9 @@ class AuthController extends Soap {
         }
     }
 
-    public function logout(): HttpResponse {
+    public function logout(Request $request, Response $response, $args) {
         session_start();
         session_destroy();
-        $response = New Response();
-        return $response->withHeader("Location", "login")->withStatus(200);
+        return view($response,'login');
     }
 }
