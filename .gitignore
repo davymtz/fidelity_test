@@ -1,2 +1,4 @@
 .DS_Store
 /vendor
+/src/assets
+/src/cache/*
