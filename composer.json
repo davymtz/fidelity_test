@@ -8,6 +8,7 @@
     },
     "scripts": {
         "post-install-cmd": [
+            "mkdir -p src/cache/",
             "mkdir -p src/assets/",
             "ln -sfr vendor/twbs/bootstrap/dist/* src/assets/"
         ]
